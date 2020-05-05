@@ -28,7 +28,7 @@ class HttpUtil {
                 val msgJson=JSONObject(text)
                 val msgInfo=msgJson.getString("text")
                 return msgInfo
-            }catch (e:JSONException){                e.printStackTrace()
+            }catch (e:JSONException){e.printStackTrace()
             }
             return "error"
         }
